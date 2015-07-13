@@ -7,10 +7,15 @@
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
+  <!-- Main container -->
+
     <div class="container-fluid">
       <header class="page-header">
         <h1 id="brand">Domestique</h1>
       </header> 
+
+<!-- this is home page choice options for choosing a ride or logging a ride -->
+
       <div class="choice-box">
         <row class="col-offset-3 col-lg-6">
           <p>
@@ -20,15 +25,197 @@
           <p>
             <a href="#" class="btn btn-default btn-lg btn-block">Log a Ride</a>
           </p>
-
         </row>
-
-
-
-
-
-
       </div>
+
+<!-- this is the form for manual logging a ride -->
+
+        <form class="form-horizontal new-ride">
+          <fieldset>
+            <legend>Add a New Ride:</legend>
+            <div class="form-group">
+              <label for="inputRideName" class="col-lg-2 control-label">Ride Name</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="inputRideName" placeholder="Name your ride">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="select" class="col-lg-2 control-label">Ride Style</label>
+              <div class="col-lg-10">
+                <select class="form-control" id="select">
+                  <option>Road Edurance</option>
+                  <option>Road Speed</option>
+                  <option>Road Leisure</option>
+                  <option>Off-road Endurance</option>
+                  <option>Off-road Speed</option>
+                  <option>Off-road Leisure</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="select" class="col-lg-2 control-label">Ride Speed</label>
+              <div class="col-lg-10">
+                <select class="form-control" id="select">
+                  <option>0-5mph</option>
+                  <option>6-10mph</option>
+                  <option>11-15mph</option>
+                  <option>16-20mph</option>
+                  <option>21-25mph</option>
+                  <option>26-30mph</option>
+                  <option>31mph+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="select" class="col-lg-2 control-label">Ride Time</label>
+              <div class="col-lg-10">
+                <select class="form-control" id="select">
+                  <option>0-30mins</option>
+                  <option>31-45mins</option>
+                  <option>46-60mins</option>
+                  <option>61-90mins</option>
+                  <option>91-120mins</option>
+                  <option>120mins+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="select" class="col-lg-2 control-label">Ride Distance</label>
+              <div class="col-lg-10">
+                <select class="form-control" id="select">
+                  <option>0-5mi</option>
+                  <option>6-15mi</option>
+                  <option>16-25mi</option>
+                  <option>26-35mi</option>
+                  <option>36-50mi</option>
+                  <option>51-75mi</option>
+                  <option>76-100mi</option>
+                  <option>100mi+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="select" class="col-lg-2 control-label">Elevation Gain</label>
+              <div class="col-lg-10">
+                <select class="form-control" id="select">
+                  <option>0-250ft</option>
+                  <option>251-500ft</option>
+                  <option>501-1000ft</option>
+                  <option>1001-1500ft</option>
+                  <option>1501-2500ft</option>
+                  <option>2501-3500ft</option>
+                  <option>3501-4500ft</option>
+                  <option>4500+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="textArea" class="col-lg-2 control-label">Description</label>
+              <div class="col-lg-10">
+                <textarea class="form-control" rows="3" id="textArea"></textarea>
+                <span class="help-block">A great description will help you choose this ride in the future!</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-lg-10 col-lg-offset-2">
+                <button type="reset" class="btn btn-default">Cancel</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+<!-- This is the Form for Choosing Ride goal -->
+        
+        <form class="form-horizontal new-goal">
+          <fieldset>
+            <legend>Choose your ride goals:</legend>
+            <div class="form-group">
+              <label for="select" class="col-lg-2 control-label">Ride Style</label>
+              <div class="col-lg-10">
+                <select class="form-control" id="select">
+                  <option>Road Edurance</option>
+                  <option>Road Speed</option>
+                  <option>Road Leisure</option>
+                  <option>Off-road Endurance</option>
+                  <option>Off-road Speed</option>
+                  <option>Off-road Leisure</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="select" class="col-lg-2 control-label">Ride Speed</label>
+              <div class="col-lg-10">
+                <select class="form-control" id="select">
+                  <option>0-5mph</option>
+                  <option>6-10mph</option>
+                  <option>11-15mph</option>
+                  <option>16-20mph</option>
+                  <option>21-25mph</option>
+                  <option>26-30mph</option>
+                  <option>31mph+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="select" class="col-lg-2 control-label">Ride Time</label>
+              <div class="col-lg-10">
+                <select class="form-control" id="select">
+                  <option>0-30mins</option>
+                  <option>31-45mins</option>
+                  <option>46-60mins</option>
+                  <option>61-90mins</option>
+                  <option>91-120mins</option>
+                  <option>120mins+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="select" class="col-lg-2 control-label">Ride Distance</label>
+              <div class="col-lg-10">
+                <select class="form-control" id="select">
+                  <option>0-5mi</option>
+                  <option>6-15mi</option>
+                  <option>16-25mi</option>
+                  <option>26-35mi</option>
+                  <option>36-50mi</option>
+                  <option>51-75mi</option>
+                  <option>76-100mi</option>
+                  <option>100mi+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="select" class="col-lg-2 control-label">Elevation Gain</label>
+              <div class="col-lg-10">
+                <select class="form-control" id="select">
+                  <option>0-250ft</option>
+                  <option>251-500ft</option>
+                  <option>501-1000ft</option>
+                  <option>1001-1500ft</option>
+                  <option>1501-2500ft</option>
+                  <option>2501-3500ft</option>
+                  <option>3501-4500ft</option>
+                  <option>4500+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-lg-10 col-lg-offset-2">
+                <button type="reset" class="btn btn-default">Cancel</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+
+
+
+
+
+      
 
 
 
