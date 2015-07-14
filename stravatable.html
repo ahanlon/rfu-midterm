@@ -1,0 +1,3801 @@
+<div class="content">
+<h1>My Activities</h1>
+<form accept-charset="UTF-8" action="/athlete/training" class="search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+<div class="inline-inputs">
+<span class="input-append">
+<input id="keywords" name="keywords" placeholder="Keywords" type="text">
+<a class="input-clear alt remove" href="#" style="display: none;">Clear Search</a>
+<button type="submit">Search</button>
+</span>
+<span style="padding-left: 20px;"></span>
+<select id="activity_type" name="activity_type"><option value="">All Activity Types</option>
+<option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+<select id="workout_type" name="workout_type" style="display: none"><option value="">All Workout Types</option>
+<option value="1">Race</option>
+<option value="2">Long Run</option>
+<option value="3">Workout</option></select>
+<span class="results-summary">
+<span class="activity-count">128 Activities</span>
+</span>
+</div>
+</form>
+
+<table class="activities sortable striped">
+<thead>
+<tr>
+<th style="width: 85px;">Type</th>
+<th class="active desc" data-order="DESC" style="width: 75px;">
+<a data-order="start_date_local ASC" href="#" title="Sort by Date">Date</a>
+</th>
+<th style="width: 210px;">
+<a data-order="name DESC" href="#" title="Sort by Title">Title</a>
+</th>
+<th style="width: 85px;">
+<a data-order="moving_time DESC" href="#" title="Sort by Time">Time</a>
+</th>
+<th style="width: 85px;">
+<a data-order="distance DESC" href="#" title="Sort by Distance">Distance</a>
+</th>
+<th style="width: 85px;">
+<a data-order="elev_gain DESC" href="#" title="Sort by Elevation">Elevation</a>
+</th>
+<th style="width: 85px;">
+Suffer Score
+</th>
+<th class="edit last-child"></th>
+</tr>
+</thead>
+<tbody>
+
+<tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Ride</td>
+<td class="view-col" style="display: table-cell;">Mon, 7/6/2015</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/340692547">Rain, mud, sand, and good times.</a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">1:37:51</td>
+<td class="view-col" style="display: table-cell;">
+20.3
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+1,145
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share enabled" data-entry="[&quot;Activity&quot;, 340692547]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 340692547]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 20.3 mile road ride.&amp;url=https://www.strava.com/activities/340692547?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 340692547]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 340692547]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="Rain, mud, sand, and good times.">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: block;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="340692547">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: none;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="340692547">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: block;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: inline;">Stationary Trainer</span>
+<span class="run-only" style="display: none;">Treadmill</span>
+<span class="other-only" style="display: none;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Mon, 7/6/2015</strong>
+</li>
+<li>
+Distance:
+<strong>20.3</strong>
+</li>
+<li>
+Time:
+<strong>1:37:51</strong>
+</li>
+<li>
+Elevation:
+<strong>1,145</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr><tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Ride</td>
+<td class="view-col" style="display: table-cell;">Sat, 7/4/2015</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/339121473">Lyons and back</a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">2:08:26</td>
+<td class="view-col" style="display: table-cell;">
+27.3
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+2,120
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share enabled" data-entry="[&quot;Activity&quot;, 339121473]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 339121473]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 27.3 mile road ride.&amp;url=https://www.strava.com/activities/339121473?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 339121473]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 339121473]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="Lyons and back">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: block;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="339121473">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: none;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="339121473">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: block;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: inline;">Stationary Trainer</span>
+<span class="run-only" style="display: none;">Treadmill</span>
+<span class="other-only" style="display: none;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Sat, 7/4/2015</strong>
+</li>
+<li>
+Distance:
+<strong>27.3</strong>
+</li>
+<li>
+Time:
+<strong>2:08:26</strong>
+</li>
+<li>
+Elevation:
+<strong>2,120</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr><tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Ride</td>
+<td class="view-col" style="display: table-cell;">Fri, 7/3/2015</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/338553942">Got breath?</a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">53:01</td>
+<td class="view-col" style="display: table-cell;">
+5.1
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+634
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share enabled" data-entry="[&quot;Activity&quot;, 338553942]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 338553942]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 5.1 mile road ride.&amp;url=https://www.strava.com/activities/338553942?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 338553942]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 338553942]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="Got breath?">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: block;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="338553942">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: none;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="338553942">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: block;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: inline;">Stationary Trainer</span>
+<span class="run-only" style="display: none;">Treadmill</span>
+<span class="other-only" style="display: none;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Fri, 7/3/2015</strong>
+</li>
+<li>
+Distance:
+<strong>5.1</strong>
+</li>
+<li>
+Time:
+<strong>53:01</strong>
+</li>
+<li>
+Elevation:
+<strong>634</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr><tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Ride</td>
+<td class="view-col" style="display: table-cell;">Sun, 6/28/2015</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/335129587">Flagstaff Round 1</a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">2:02:16</td>
+<td class="view-col" style="display: table-cell;">
+22.0
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+1,791
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share enabled" data-entry="[&quot;Activity&quot;, 335129587]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 335129587]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 22.0 mile road ride.&amp;url=https://www.strava.com/activities/335129587?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 335129587]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 335129587]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="Flagstaff Round 1">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: block;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="335129587">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: none;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="335129587">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: block;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: inline;">Stationary Trainer</span>
+<span class="run-only" style="display: none;">Treadmill</span>
+<span class="other-only" style="display: none;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Sun, 6/28/2015</strong>
+</li>
+<li>
+Distance:
+<strong>22.0</strong>
+</li>
+<li>
+Time:
+<strong>2:02:16</strong>
+</li>
+<li>
+Elevation:
+<strong>1,791</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr><tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Hike</td>
+<td class="view-col" style="display: table-cell;">Sat, 6/27/2015</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/334838700">Waterfall hike</a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">33:08</td>
+<td class="view-col" style="display: table-cell;">
+1.2
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+298
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share enabled" data-entry="[&quot;Activity&quot;, 334838700]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 334838700]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 1.2 mile Hike.&amp;url=https://www.strava.com/activities/334838700?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 334838700]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 334838700]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="Waterfall hike">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: none;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="334838700">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: none;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="334838700">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: none;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: none;">Stationary Trainer</span>
+<span class="run-only" style="display: none;">Treadmill</span>
+<span class="other-only" style="display: inline;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Sat, 6/27/2015</strong>
+</li>
+<li>
+Distance:
+<strong>1.2</strong>
+</li>
+<li>
+Time:
+<strong>33:08</strong>
+</li>
+<li>
+Elevation:
+<strong>298</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr><tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Ride</td>
+<td class="view-col" style="display: table-cell;">Fri, 6/26/2015</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/333704220">To NCAR and back</a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">1:15:16</td>
+<td class="view-col" style="display: table-cell;">
+15.4
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+999
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share enabled" data-entry="[&quot;Activity&quot;, 333704220]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 333704220]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 15.4 mile road ride.&amp;url=https://www.strava.com/activities/333704220?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 333704220]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 333704220]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="To NCAR and back">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: block;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="333704220">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: none;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="333704220">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: block;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: inline;">Stationary Trainer</span>
+<span class="run-only" style="display: none;">Treadmill</span>
+<span class="other-only" style="display: none;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Fri, 6/26/2015</strong>
+</li>
+<li>
+Distance:
+<strong>15.4</strong>
+</li>
+<li>
+Time:
+<strong>1:15:16</strong>
+</li>
+<li>
+Elevation:
+<strong>999</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr><tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Ride</td>
+<td class="view-col" style="display: table-cell;">Thu, 6/25/2015</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/333114250">CU Tour</a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">1:51:27</td>
+<td class="view-col" style="display: table-cell;">
+20.7
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+1,066
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share enabled" data-entry="[&quot;Activity&quot;, 333114250]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 333114250]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 20.7 mile road ride.&amp;url=https://www.strava.com/activities/333114250?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 333114250]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 333114250]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="CU Tour">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: block;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="333114250">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: none;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="333114250">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: block;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: inline;">Stationary Trainer</span>
+<span class="run-only" style="display: none;">Treadmill</span>
+<span class="other-only" style="display: none;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Thu, 6/25/2015</strong>
+</li>
+<li>
+Distance:
+<strong>20.7</strong>
+</li>
+<li>
+Time:
+<strong>1:51:27</strong>
+</li>
+<li>
+Elevation:
+<strong>1,066</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr><tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Ride</td>
+<td class="view-col" style="display: table-cell;">Mon, 6/22/2015</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/331010024">Evening Cruise </a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">1:19:48</td>
+<td class="view-col" style="display: table-cell;">
+17.5
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+542
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share enabled" data-entry="[&quot;Activity&quot;, 331010024]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 331010024]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 17.5 mile road ride.&amp;url=https://www.strava.com/activities/331010024?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 331010024]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 331010024]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="Evening Cruise ">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: block;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="331010024">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: none;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="331010024">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: block;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: inline;">Stationary Trainer</span>
+<span class="run-only" style="display: none;">Treadmill</span>
+<span class="other-only" style="display: none;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Mon, 6/22/2015</strong>
+</li>
+<li>
+Distance:
+<strong>17.5</strong>
+</li>
+<li>
+Time:
+<strong>1:19:48</strong>
+</li>
+<li>
+Elevation:
+<strong>542</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr><tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Ride</td>
+<td class="view-col" style="display: table-cell;">Sun, 6/21/2015</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/330252085">Marshall Mesa mtb</a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">1:13:36</td>
+<td class="view-col" style="display: table-cell;">
+9.4
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+259
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share enabled" data-entry="[&quot;Activity&quot;, 330252085]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 330252085]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 9.4 mile road ride.&amp;url=https://www.strava.com/activities/330252085?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 330252085]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 330252085]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="Marshall Mesa mtb">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: block;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="330252085">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: none;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="330252085">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: block;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: inline;">Stationary Trainer</span>
+<span class="run-only" style="display: none;">Treadmill</span>
+<span class="other-only" style="display: none;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Sun, 6/21/2015</strong>
+</li>
+<li>
+Distance:
+<strong>9.4</strong>
+</li>
+<li>
+Time:
+<strong>1:13:36</strong>
+</li>
+<li>
+Elevation:
+<strong>259</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr><tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Ride</td>
+<td class="view-col" style="display: table-cell;">Sat, 6/20/2015</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/329466713">2nd Official Boco ride</a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">1:33:53</td>
+<td class="view-col" style="display: table-cell;">
+19.6
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+805
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share enabled" data-entry="[&quot;Activity&quot;, 329466713]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 329466713]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 19.6 mile road ride.&amp;url=https://www.strava.com/activities/329466713?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 329466713]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 329466713]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="2nd Official Boco ride">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: block;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="329466713">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: none;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="329466713">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: block;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: inline;">Stationary Trainer</span>
+<span class="run-only" style="display: none;">Treadmill</span>
+<span class="other-only" style="display: none;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Sat, 6/20/2015</strong>
+</li>
+<li>
+Distance:
+<strong>19.6</strong>
+</li>
+<li>
+Time:
+<strong>1:33:53</strong>
+</li>
+<li>
+Elevation:
+<strong>805</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr><tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Workout</td>
+<td class="view-col" style="display: table-cell;">Thu, 6/18/2015</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/328383047">First Colorado jog/walk</a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">36:15</td>
+<td class="view-col" style="display: table-cell;">
+2.7
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+227
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share enabled" data-entry="[&quot;Activity&quot;, 328383047]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 328383047]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 2.7 mile Run.&amp;url=https://www.strava.com/activities/328383047?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 328383047]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 328383047]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="First Colorado jog/walk">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: none;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="328383047">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: block;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="328383047">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: none;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: none;">Stationary Trainer</span>
+<span class="run-only" style="display: inline;">Treadmill</span>
+<span class="other-only" style="display: none;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Thu, 6/18/2015</strong>
+</li>
+<li>
+Distance:
+<strong>2.7</strong>
+</li>
+<li>
+Time:
+<strong>36:15</strong>
+</li>
+<li>
+Elevation:
+<strong>227</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr><tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Ride</td>
+<td class="view-col" style="display: table-cell;">Sat, 3/28/2015</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/275598809">Ride to get the Jeep</a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">15:32</td>
+<td class="view-col" style="display: table-cell;">
+3.3
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+98
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share enabled" data-entry="[&quot;Activity&quot;, 275598809]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 275598809]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 3.3 mile road ride.&amp;url=https://www.strava.com/activities/275598809?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 275598809]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 275598809]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="Ride to get the Jeep">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: block;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="275598809">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: none;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="275598809">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: block;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: inline;">Stationary Trainer</span>
+<span class="run-only" style="display: none;">Treadmill</span>
+<span class="other-only" style="display: none;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Sat, 3/28/2015</strong>
+</li>
+<li>
+Distance:
+<strong>3.3</strong>
+</li>
+<li>
+Time:
+<strong>15:32</strong>
+</li>
+<li>
+Elevation:
+<strong>98</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr><tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Walk</td>
+<td class="view-col" style="display: table-cell;">Sat, 3/21/2015</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/271885896">Afternoon Walk</a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">33:10</td>
+<td class="view-col" style="display: table-cell;">
+2.4
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+134
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share enabled" data-entry="[&quot;Activity&quot;, 271885896]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 271885896]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 2.4 mile Walk.&amp;url=https://www.strava.com/activities/271885896?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 271885896]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 271885896]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="Afternoon Walk">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: none;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="271885896">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: none;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="271885896">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: none;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: none;">Stationary Trainer</span>
+<span class="run-only" style="display: none;">Treadmill</span>
+<span class="other-only" style="display: inline;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Sat, 3/21/2015</strong>
+</li>
+<li>
+Distance:
+<strong>2.4</strong>
+</li>
+<li>
+Time:
+<strong>33:10</strong>
+</li>
+<li>
+Elevation:
+<strong>134</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr><tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Ride</td>
+<td class="view-col" style="display: table-cell;">Sat, 2/14/2015</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/254885417">Afternoon Ride with Mabes</a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">14:49</td>
+<td class="view-col" style="display: table-cell;">
+1.8
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+72
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share enabled" data-entry="[&quot;Activity&quot;, 254885417]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 254885417]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 1.8 mile road ride.&amp;url=https://www.strava.com/activities/254885417?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 254885417]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 254885417]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="Afternoon Ride with Mabes">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: block;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="254885417">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: none;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="254885417">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: block;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: inline;">Stationary Trainer</span>
+<span class="run-only" style="display: none;">Treadmill</span>
+<span class="other-only" style="display: none;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Sat, 2/14/2015</strong>
+</li>
+<li>
+Distance:
+<strong>1.8</strong>
+</li>
+<li>
+Time:
+<strong>14:49</strong>
+</li>
+<li>
+Elevation:
+<strong>72</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr><tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Ride</td>
+<td class="view-col" style="display: table-cell;">Sat, 1/24/2015</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/254879074">Morning Ride</a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">3<abbr class="unit" title="second">s</abbr></td>
+<td class="view-col" style="display: table-cell;">
+0.0
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+0
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share enabled" data-entry="[&quot;Activity&quot;, 254879074]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 254879074]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 0.0 mile road ride.&amp;url=https://www.strava.com/activities/254879074?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 254879074]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 254879074]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="Morning Ride">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: block;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="254879074">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: none;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="254879074">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: block;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: inline;">Stationary Trainer</span>
+<span class="run-only" style="display: none;">Treadmill</span>
+<span class="other-only" style="display: none;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Sat, 1/24/2015</strong>
+</li>
+<li>
+Distance:
+<strong>0.0</strong>
+</li>
+<li>
+Time:
+<strong>3&lt;abbr class='unit' title='second'&gt;s&lt;/abbr&gt;</strong>
+</li>
+<li>
+Elevation:
+<strong>0</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr><tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Ride</td>
+<td class="view-col" style="display: table-cell;">Sat, 12/13/2014</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/228971885">Forrest Meadows</a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">56:10</td>
+<td class="view-col" style="display: table-cell;">
+5.3
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+87
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share enabled" data-entry="[&quot;Activity&quot;, 228971885]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 228971885]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 5.3 mile road ride.&amp;url=https://www.strava.com/activities/228971885?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 228971885]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 228971885]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="Forrest Meadows">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: block;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="228971885">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: none;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="228971885">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: block;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: inline;">Stationary Trainer</span>
+<span class="run-only" style="display: none;">Treadmill</span>
+<span class="other-only" style="display: none;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Sat, 12/13/2014</strong>
+</li>
+<li>
+Distance:
+<strong>5.3</strong>
+</li>
+<li>
+Time:
+<strong>56:10</strong>
+</li>
+<li>
+Elevation:
+<strong>87</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr><tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Ride</td>
+<td class="view-col" style="display: table-cell;">Sat, 12/6/2014</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/226782722">Forrest Meadows</a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">53:07</td>
+<td class="view-col" style="display: table-cell;">
+4.2
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+95
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share enabled" data-entry="[&quot;Activity&quot;, 226782722]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 226782722]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 4.2 mile road ride.&amp;url=https://www.strava.com/activities/226782722?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 226782722]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 226782722]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="Forrest Meadows">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: block;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="226782722">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: none;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="226782722">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: block;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: inline;">Stationary Trainer</span>
+<span class="run-only" style="display: none;">Treadmill</span>
+<span class="other-only" style="display: none;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Sat, 12/6/2014</strong>
+</li>
+<li>
+Distance:
+<strong>4.2</strong>
+</li>
+<li>
+Time:
+<strong>53:07</strong>
+</li>
+<li>
+Elevation:
+<strong>95</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr><tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Ride</td>
+<td class="view-col" style="display: table-cell;">Wed, 11/26/2014</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/223474057">Cruisin</a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">57:48</td>
+<td class="view-col" style="display: table-cell;">
+13.5
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+397
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share enabled" data-entry="[&quot;Activity&quot;, 223474057]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 223474057]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 13.5 mile road ride.&amp;url=https://www.strava.com/activities/223474057?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 223474057]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 223474057]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="Cruisin">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: block;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="223474057">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: none;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="223474057">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: block;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: inline;">Stationary Trainer</span>
+<span class="run-only" style="display: none;">Treadmill</span>
+<span class="other-only" style="display: none;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Wed, 11/26/2014</strong>
+</li>
+<li>
+Distance:
+<strong>13.5</strong>
+</li>
+<li>
+Time:
+<strong>57:48</strong>
+</li>
+<li>
+Elevation:
+<strong>397</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr><tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Ride</td>
+<td class="view-col" style="display: table-cell;">Thu, 10/9/2014</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/205406823">Evening Ride hipster style</a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">24:53</td>
+<td class="view-col" style="display: table-cell;">
+5.2
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+161
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share enabled" data-entry="[&quot;Activity&quot;, 205406823]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 205406823]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 5.2 mile road ride.&amp;url=https://www.strava.com/activities/205406823?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 205406823]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 205406823]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="Evening Ride hipster style">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: block;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="205406823">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: none;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="205406823">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: block;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: inline;">Stationary Trainer</span>
+<span class="run-only" style="display: none;">Treadmill</span>
+<span class="other-only" style="display: none;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Thu, 10/9/2014</strong>
+</li>
+<li>
+Distance:
+<strong>5.2</strong>
+</li>
+<li>
+Time:
+<strong>24:53</strong>
+</li>
+<li>
+Elevation:
+<strong>161</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr><tr class="training-activity-row">
+<td class="view-col" data-field-name="type" style="display: table-cell;">Run</td>
+<td class="view-col" style="display: table-cell;">Sat, 8/30/2014</td>
+<td class="view-col" style="display: table-cell;">
+<a data-field-name="name" href="https://www.strava.com/activities/187374368">Morning Run/walk</a>
+<div class="icon-private app-icon icon-xs icon-dark" data-field-name="private" style="display: none;" title="Private"></div>
+
+</td>
+<td class="view-col" data-field-name="time" style="display: table-cell;">47:43</td>
+<td class="view-col" style="display: table-cell;">
+4.1
+<abbr class="unit" title="miles">
+mi
+</abbr>
+</td>
+<td class="view-col" style="display: table-cell;">
+98
+<abbr class="unit" title="feet">ft</abbr>
+</td>
+<td class="view-col" style="display: table-cell;"></td>
+<td class="view-col justify-right" style="display: table-cell;">
+<ul class="list-inline">
+<li>
+<a class="quick-edit">Edit</a>
+</li>
+<li>
+<a class="delete">Delete</a>
+</li>
+
+<li>
+<div class="drop-down-menu drop-down-xs share" data-entry="[&quot;Activity&quot;, 187374368]">
+<div class="button selection minimal">Share</div>
+<ul class="options">
+<li>
+<a class="facebook" data-entry="[&quot;Activity&quot;, 187374368]" href="javascript:;">
+On Facebook
+</a>
+</li>
+<li>
+<a class="twitter" href="http://twitter.com/intent/tweet?text=went for a 4.1 mile Run.&amp;url=https://www.strava.com/activities/187374368?utm_content=604900&amp;utm_medium=twitter&amp;utm_source=ride_share">
+On Twitter
+</a>
+</li>
+<li>
+<a class="embed" data-entry="[&quot;Activity&quot;, 187374368]">
+Embed on Blog
+</a>
+</li>
+<li>
+<a class="email" data-entry="[&quot;Activity&quot;, 187374368]">
+Send Email
+</a>
+</li>
+</ul>
+</div>
+</li>
+
+
+</ul>
+</td>
+<td class="updating-col" colspan="9" style="display: none;">
+<div class="spinner sm " style="">
+      <div class="graphic"></div>
+      <span class="status">Loading…</span>
+    </div>
+</td>
+<td class="edit-col" colspan="9" style="display: none;">
+<form>
+<table class="layout">
+<tbody><tr>
+<td style="display: none;">
+<div class="map-canvas-activity"></div>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Name</label>
+<input id="name" name="name" type="text" value="Morning Run/walk">
+</div>
+<div class="inline-inputs">
+<span class="label-row">
+<label for="type">Type</label>
+<select class="activity-type" id="type" name="type"><option value="Ride">Ride</option>
+<option value="Run">Run</option>
+<option value="Swim">Swim</option>
+<option value="Hike">Hike</option>
+<option value="Walk">Walk</option>
+<option value="AlpineSki">Alpine Ski</option>
+<option value="BackcountrySki">Backcountry Ski</option>
+<option value="Canoeing">Canoeing</option>
+<option value="CrossCountrySkiing">Cross-country Skiing</option>
+<option value="Crossfit">Crossfit</option>
+<option value="EBikeRide">E-Bike Ride</option>
+<option value="Elliptical">Elliptical</option>
+<option value="IceSkate">Ice Skate</option>
+<option value="InlineSkate">Inline Skate</option>
+<option value="Kayaking">Kayaking</option>
+<option value="Kitesurf">Kitesurf</option>
+<option value="NordicSki">Nordic Ski</option>
+<option value="RockClimbing">Rock Climbing</option>
+<option value="RollerSki">Roller Ski</option>
+<option value="Rowing">Rowing</option>
+<option value="Snowboard">Snowboard</option>
+<option value="Snowshoe">Snowshoe</option>
+<option value="StairStepper">Stair-Stepper</option>
+<option value="StandUpPaddling">Stand Up Paddling</option>
+<option value="Surfing">Surfing</option>
+<option value="VirtualRide">Virtual Ride</option>
+<option value="WeightTraining">Weight Training</option>
+<option value="Windsurf">Windsurf</option>
+<option value="Workout">Workout</option>
+<option value="Yoga">Yoga</option></select>
+</span>
+<span>
+<label>
+<input id="private" name="private" type="checkbox" value="true">
+<span>Private</span>
+</label>
+</span>
+</div>
+<div class="label-row ride-only" style="display: none;">
+<label class="bike" for="bike_id">Bike</label>
+<span class="bike-quick-edit" data-activity-id="187374368">
+<select class="bike-id bike" id="bike_id" name="bike_id"><option value=""></option><option value="330449">Cannondale</option>
+<option value="616431">Diamondback</option>
+<option value="1125838">Rental</option></select>
+<a href="/settings/gear" id="add-new-bike">Add New Bike</a>
+</span>
+</div>
+<div class="label-row run-only" style="display: block;">
+<label class="shoes" for="athlete_gear_id">Shoes</label>
+<span class="shoe-quick-edit" data-activity-id="187374368">
+<select class="shoe-id" id="athlete_gear_id" name="athlete_gear_id"><option value=""></option><option value="128958">Brooks Adrenailine 12 GTS</option></select>
+<a href="/settings/gear" id="add-new-shoes">Add New Shoes</a>
+</span>
+</div>
+<ul class="checklist ride-only" style="display: none;">
+<label>
+<input id="commute" name="commute" type="checkbox" value="true">
+<span>Commute</span>
+</label>
+</ul>
+<ul class="checklist">
+<label>
+<input id="trainer" name="trainer" type="checkbox" value="true">
+<span class="ride-only" style="display: none;">Stationary Trainer</span>
+<span class="run-only" style="display: inline;">Treadmill</span>
+<span class="other-only" style="display: none;">Trainer</span>
+</label>
+</ul>
+</td>
+<td style="display: none;">
+<div class="label-row">
+<label>Notes</label>
+<textarea id="description" name="description"></textarea>
+</div>
+</td>
+<td style="display: none;">
+<div class="label strong">Details</div>
+<ul class="unstyled">
+<li>
+Date:
+<strong>Sat, 8/30/2014</strong>
+</li>
+<li>
+Distance:
+<strong>4.1</strong>
+</li>
+<li>
+Time:
+<strong>47:43</strong>
+</li>
+<li>
+Elevation:
+<strong>98</strong>
+</li>
+</ul>
+</td>
+<td class="justify-right" style="display: none;">
+<button type="submit">Save</button>
+<a class="cancel">Cancel</a>
+<div class="message error" style="display: none;"></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr></tbody>
+</table>
+</div>

@@ -2,3 +2,21 @@
 .center {
 	text-align: center;
 }
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: visible;
+}
+
+.choice-box {
+	margin: 25%;
+}
+body {
+	background-image: url(file:///Users/student/downloads/IMG_0047.JPG)
+}
+
+
+

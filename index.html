@@ -13,24 +13,25 @@
       <header class="page-header">
         <h1 id="brand">Domestique</h1>
       </header> 
+    </div>
 
 <!-- this is home page choice options for choosing a ride or logging a ride -->
-
-      <div class="choice-box">
-        <row class="col-offset-3 col-lg-6">
+    <div class="container-fluid main">
+      <row>
+        <div class="choice-box col-sm-6">
           <p>
-            <a href="#" class="btn btn-default btn-lg btn-block">Choose a Ride</a>
+            <a href="#" class="btn btn-default btn-lg btn-block choose-ride">Choose a Ride</a>
           </p>
           <p class="center">or</p>
           <p>
-            <a href="#" class="btn btn-default btn-lg btn-block">Log a Ride</a>
+            <a href="#" class="btn btn-default btn-lg btn-block log-ride">Log a Ride</a>
           </p>
-        </row>
-      </div>
+        </div>
+      </row>
 
 <!-- this is the form for manual logging a ride -->
 
-        <form class="form-horizontal new-ride">
+        <form class="form-horizontal new-ride hide">
           <fieldset>
             <legend>Add a New Ride:</legend>
             <div class="form-group">
@@ -119,7 +120,7 @@
             <div class="form-group">
               <div class="col-lg-10 col-lg-offset-2">
                 <button type="reset" class="btn btn-default">Cancel</button>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary log-submit">Submit</button>
               </div>
             </div>
           </fieldset>
@@ -128,7 +129,7 @@
 
 <!-- This is the Form for Choosing Ride goal -->
         
-        <form class="form-horizontal new-goal">
+        <form class="form-horizontal new-goal hide">
           <fieldset>
             <legend>Choose your ride goals:</legend>
             <div class="form-group">
@@ -204,16 +205,74 @@
             <div class="form-group">
               <div class="col-lg-10 col-lg-offset-2">
                 <button type="reset" class="btn btn-default">Cancel</button>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary goal-submit">Submit</button>
               </div>
             </div>
           </fieldset>
         </form>
 
+<!-- Ride Table -->
 
-
-
-
+        <table class="table table-striped table-hover ">
+          <thead>
+            <tr>
+              <th>Style</th>
+              <th>Name</th>
+              <th>Time</th>
+              <th>Distance</th>
+              <th>Speed</th>
+              <th>Elevation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Road Endurance</td>
+              <td>Rain, Mud, sand, and good times</td>
+              <td>1:37:51</td>
+              <td>20.3 mi</td>
+              <td>12.5 mi/h</td>
+              <td>1,145 ft</td>
+            </tr>
+            <tr>
+              <td>Road Endurance</td>
+              <td>Lyons and back</td>
+              <td>2:08:26</td>
+              <td>27.3 mi</td>
+              <td>12.8 mi/h</td>
+              <td>2,120 ft</td>
+            </tr>
+            <tr class="info">
+              <td>3</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr class="success">
+              <td>4</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr class="danger">
+              <td>5</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr class="warning">
+              <td>6</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr class="active">
+              <td>7</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+          </tbody>
+        </table> 
 
       
 
