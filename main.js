@@ -12,10 +12,12 @@ var Ride = function(name, style, speed, time, distance, gain, description){
 }
 
 
-// $( ".new-ride" ).submit(function( event ) {
-//   console.log( $( this ).serializeArray() );
-//   event.preventDefault();
-// });
+
+
+$( ".goal-submit" ).on(function( event ) {
+  console.log( $( this ).serializeArray() );
+  event.preventDefault();
+});
 
 
 
@@ -28,7 +30,9 @@ var RideGoal = function(style, speed, time, distance, gain){
 	this.gain			= gain;
 }
 
-$('.btn').on('click', function(event){
+
+
+$('.btn-primary').on('click', function(event){
 	event.preventDefault()
 });
 
@@ -44,12 +48,27 @@ $('.choose-ride').on('click', function(){
 // submit goals, hide the form and show the matching list of rides
 $('.goal-submit').on('click', function(){
 	console.log("goal submitted");
-	$('.new-goal').removeClass('show').addClass('hide')
-	$('.ride-list').addClass('show')
+	$('.new-goal').removeClass('show').addClass('hide');
+	$('.ride-list').addClass('show');
 
+	var rideStyle = $('#rideStyle').val();
+	var rideSpeed = $('#rideSpeed').val();
+	var rideTime = $('#rideTime').val();
+	var rideDistance = $('#rideDistance');
+	var rideElevation = $('#rideElevation');
+	
+	var newGoal = new RideGoal(rideStyle, rideSpeed, rideTime, rideDistance, rideElevation);
+});
+// console.log(newGoal);
+
+// if cancel is clicked on new goal
+$('.goal-cancel').on('click', function(){
+	console.log("nevermind");
+	$('.choice-box').removeClass('hide').addClass('show')
+	$('.new-goal').removeClass('show').addClass('hide')
 });
 
-// hide main choice box and show set goal form
+// hide main choice box and show set goal form on submit
 
 $('.log-ride').on('click', function(){
 	console.log("clicked");
@@ -65,38 +84,13 @@ $('.log-submit').on('click', function(){
 
 });
 
+// if cancel is clicked on new-ride
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$('.log-cancel').on('click', function(){
+	console.log("clicked");
+	$('.choice-box').removeClass('hide').addClass('show')
+	$('.new-ride').removeClass('show').addClass('hide')
+});
 
 
 

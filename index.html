@@ -37,13 +37,13 @@
             <div class="form-group">
               <label for="inputRideName" class="col-lg-2 control-label">Ride Name</label>
               <div class="col-lg-10">
-                <input type="text" class="form-control" id="inputRideName" placeholder="Name your ride">
+                <input type="text" class="form-control" id="rideName" placeholder="Name your ride">
               </div>
             </div>
             <div class="form-group">
               <label for="select" class="col-lg-2 control-label">Ride Style</label>
               <div class="col-lg-10">
-                <select class="form-control" id="select">
+                <select class="form-control" id="rideStyle">
                   <option>Road Edurance</option>
                   <option>Road Speed</option>
                   <option>Road Leisure</option>
@@ -56,7 +56,7 @@
             <div class="form-group">
               <label for="select" class="col-lg-2 control-label">Ride Speed</label>
               <div class="col-lg-10">
-                <select class="form-control" id="select">
+                <select class="form-control" id="rideSpeed">
                   <option>0-5mph</option>
                   <option>6-10mph</option>
                   <option>11-15mph</option>
@@ -70,7 +70,7 @@
             <div class="form-group">
               <label for="select" class="col-lg-2 control-label">Ride Time</label>
               <div class="col-lg-10">
-                <select class="form-control" id="select">
+                <select class="form-control" id="rideTime">
                   <option>0-30mins</option>
                   <option>31-45mins</option>
                   <option>46-60mins</option>
@@ -83,7 +83,7 @@
             <div class="form-group">
               <label for="select" class="col-lg-2 control-label">Ride Distance</label>
               <div class="col-lg-10">
-                <select class="form-control" id="select">
+                <select class="form-control" id="rideDistance">
                   <option>0-5mi</option>
                   <option>6-15mi</option>
                   <option>16-25mi</option>
@@ -98,7 +98,7 @@
             <div class="form-group">
               <label for="select" class="col-lg-2 control-label">Elevation Gain</label>
               <div class="col-lg-10">
-                <select class="form-control" id="select">
+                <select class="form-control" id="elevation">
                   <option>0-250ft</option>
                   <option>251-500ft</option>
                   <option>501-1000ft</option>
@@ -113,13 +113,13 @@
             <div class="form-group">
               <label for="textArea" class="col-lg-2 control-label">Description</label>
               <div class="col-lg-10">
-                <textarea class="form-control" rows="3" id="textArea"></textarea>
+                <textarea class="form-control" rows="3" id="rideDescription"></textarea>
                 <span class="help-block">A great description will help you choose this ride in the future!</span>
               </div>
             </div>
             <div class="form-group">
               <div class="col-lg-10 col-lg-offset-2">
-                <button type="reset" class="btn btn-default">Cancel</button>
+                <button type="reset" class="btn btn-default log-cancel">Cancel</button>
                 <button type="submit" class="btn btn-primary log-submit">Submit</button>
               </div>
             </div>
@@ -135,7 +135,7 @@
             <div class="form-group">
               <label for="select" class="col-lg-2 control-label">Ride Style</label>
               <div class="col-lg-10">
-                <select class="form-control" id="select">
+                <select class="form-control" id="rideStyle">
                   <option>Road Edurance</option>
                   <option>Road Speed</option>
                   <option>Road Leisure</option>
@@ -148,7 +148,7 @@
             <div class="form-group">
               <label for="select" class="col-lg-2 control-label">Ride Speed</label>
               <div class="col-lg-10">
-                <select class="form-control" id="select">
+                <select class="form-control" id="rideSpeed">
                   <option>0-5mph</option>
                   <option>6-10mph</option>
                   <option>11-15mph</option>
@@ -162,7 +162,7 @@
             <div class="form-group">
               <label for="select" class="col-lg-2 control-label">Ride Time</label>
               <div class="col-lg-10">
-                <select class="form-control" id="select">
+                <select class="form-control" id="rideTime">
                   <option>0-30mins</option>
                   <option>31-45mins</option>
                   <option>46-60mins</option>
@@ -175,7 +175,7 @@
             <div class="form-group">
               <label for="select" class="col-lg-2 control-label">Ride Distance</label>
               <div class="col-lg-10">
-                <select class="form-control" id="select">
+                <select class="form-control" id="rideDistance">
                   <option>0-5mi</option>
                   <option>6-15mi</option>
                   <option>16-25mi</option>
@@ -190,7 +190,7 @@
             <div class="form-group">
               <label for="select" class="col-lg-2 control-label">Elevation Gain</label>
               <div class="col-lg-10">
-                <select class="form-control" id="select">
+                <select class="form-control" id="rideElevation">
                   <option>0-250ft</option>
                   <option>251-500ft</option>
                   <option>501-1000ft</option>
@@ -204,7 +204,7 @@
             </div>
             <div class="form-group">
               <div class="col-lg-10 col-lg-offset-2">
-                <button type="reset" class="btn btn-default">Cancel</button>
+                <button type="reset" class="btn btn-default goal-cancel">Cancel</button>
                 <button type="submit" class="btn btn-primary goal-submit">Submit</button>
               </div>
             </div>
@@ -213,7 +213,7 @@
 
 <!-- Ride Table -->
 
-        <table class="table table-striped table-hover ">
+        <table class="table table-striped table-hover ride-list hide">
           <thead>
             <tr>
               <th>Style</th>
@@ -225,7 +225,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="info">
               <td>Road Endurance</td>
               <td>Rain, Mud, sand, and good times</td>
               <td>1:37:51</td>
@@ -241,40 +241,11 @@
               <td>12.8 mi/h</td>
               <td>2,120 ft</td>
             </tr>
-            <tr class="info">
-              <td>3</td>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-            </tr>
-            <tr class="success">
-              <td>4</td>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-            </tr>
-            <tr class="danger">
-              <td>5</td>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-            </tr>
-            <tr class="warning">
-              <td>6</td>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-            </tr>
-            <tr class="active">
-              <td>7</td>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-            </tr>
+      
           </tbody>
         </table> 
 
-      
+<!-- Lightbox / modal -->
 
 
 
