@@ -1,19 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>Domestique</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/slate/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
   </head>
   <body>
   <!-- Main container -->
 
-    <div class="container-fluid">
-      <header class="page-header">
-        <h1 id="brand">Domestique</h1>
-      </header> 
-    </div>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="file:///Users/student/projects/midterm/index.html#">Domestique</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
 <!-- this is home page choice options for choosing a ride or logging a ride -->
     <div class="container-fluid main">
@@ -37,7 +87,7 @@
             <div class="form-group">
               <label for="inputRideName" class="col-lg-2 control-label">Ride Name</label>
               <div class="col-lg-10">
-                <input type="text" class="form-control" id="rideName" placeholder="Name your ride">
+              <input type="text" class="form-control" id="rideName" placeholder="Name your ride">
               </div>
             </div>
             <div class="form-group">
@@ -227,7 +277,7 @@
           <tbody>
             <tr class="info">
               <td>Road Endurance</td>
-              <td>Rain, Mud, sand, and good times</td>
+              <td><a href="#" class="name">Rain, Mud, sand, and good times</a></td>
               <td>1:37:51</td>
               <td>20.3 mi</td>
               <td>12.5 mi/h</td>
@@ -235,7 +285,7 @@
             </tr>
             <tr>
               <td>Road Endurance</td>
-              <td>Lyons and back</td>
+              <td><a href="#" class="name">Lyons and back</a></td>
               <td>2:08:26</td>
               <td>27.3 mi</td>
               <td>12.8 mi/h</td>
@@ -246,9 +296,68 @@
         </table> 
 
 <!-- Lightbox / modal -->
-
-
-
+        
+              
+          <div class="box rideDetail hide">
+            <div class="box-row1">
+              <h3 class="inline-block rideName">"Ride Name"</h3>
+                <div class="stats-box">
+                  <div class="panel panel-success inline-block data">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Style</h3>
+                    </div>
+                    <div class="panel-body">
+                      "rideStyle"
+                    </div>
+                  </div>
+                  <div class="panel panel-success inline-block data">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Time</h3>
+                    </div>
+                    <div class="panel-body">
+                      "rideTime"
+                    </div>
+                  </div>
+                  <div class="panel panel-success inline-block data">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Distance</h3>
+                    </div>
+                    <div class="panel-body">
+                      "rideDistance"
+                    </div>
+                  </div>
+                  <div class="panel panel-success inline-block data">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Speed</h3>
+                    </div>
+                    <div class="panel-body">
+                      "rideSpeed"
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="box-row2">
+              <div class="panel panel-info description-panel float-left">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Description</h3>
+                </div>
+                <div class="panel-body">
+                  "ride description"
+                </div>
+              </div>
+              <!-- <div class="inline-block float-left">
+                <p>"ride description"</p>
+              </div> -->
+              <div id="map-canvas" class="inline-block"></div>
+            </div>
+            <div class="box-row3">
+              <div class="close-button">
+                <a href="#">Close</a>
+              </div>
+            </div>
+          
+              
+        
 
     </div>
     
