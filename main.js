@@ -111,46 +111,48 @@ $('.goal-submit').on('click', function(){
 	$('.new-goal').removeClass('show').addClass('hide');
 	$('#ride-list').addClass('show');	
 
-	var goalVals =[rideStyle, rideTime, rideDistance, rideSpeed, rideElevation, 'zz'];
 
 	var rideStyle = $('#rideStyle').val();
 	var rideTime = $('#rideTime').val();
-	var rideDistance = $('#rideDistance').data('id');
-	var rideSpeed = $('#rideSpeed').data('id');
-	var rideElevation = $('#rideElevation').data('id');
+	var rideDistance = $('#rideDistance').val();
+	var rideSpeed = $('#rideSpeed').val();
+	var rideElevation = $('#rideElevation').val();
 	console.log( rideStyle )
 
 	// var newGoal = new RideGoal(rideStyle, rideTime, rideDistance, rideSpeed, rideElevation);
 	// rideList.push(newGoal)
 
+	var goalVals =[rideStyle, rideTime, rideDistance, rideSpeed, rideElevation, 'zz'];
 	
-// 	var table = document.getElementById("ride-list");
-// 	// for (var i = 1, row; row = table.rows[i]; i++) {
-// 	//    //iterate through rows
-// 	//    //rows would be accessed using the "row" variable assigned in the for loop
-// 	//    for (var j = 0, col; col = row.cells[j]; j++) {
-// 	//      //iterate through columns
-// 	//      //columns would be accessed using the "col" variable assigned in the for loop
+	var table = document.getElementById("ride-list");
+
+	// for (var i = 1, row; row = table.rows[i]; i++) {
+	//    //iterate through rows
+	//    //rows would be accessed using the "row" variable assigned in the for loop
+	//    for (var j = 0, col; col = row.cells[j]; j++) {
+	//      //iterate through columns
+	//      //columns would be accessed using the "col" variable assigned in the for loop
 	     
 	     
-// 		   for (var i = 1, row; row = table.rows[i]; i++) {
-// 		   //iterate through rows
-// 		   //rows would be accessed using the "row" variable assigned in the for loop
+		   for (var i = 1, row; row = table.rows[i]; i++) {
+		   //iterate through rows
+		   //rows would be accessed using the "row" variable assigned in the for loop
 		   
 
-// 		   for (var j = 1, col; col = row.cells[j] ; j++) {
-// 		     //iterate through columns
-// 		     //columns would be accessed using the "col" variable assigned in the for loop
-// 		     var v = $(col).data('id');
-// 		     // var gV = goalVals
-// 		     if (v != goalVals[(j - 1 )] ) {
-// 		     	console.log(v)
-// 		     	console.log(goalVals[j])
-// 		     	// $(row).addClass('hide')
-// 	     	}
-
-// 	   }  
-// 	}
+			   for (var j = 1, col; col = row.cells[j] ; j++) {
+			     //iterate through columns
+			     //columns would be accessed using the "col" variable assigned in the for loop
+			     var v = $(col).data('id');
+			     var gV = goalVals[(j - 1)]
+			     	console.log(gV)
+			     	console.log(v)
+			     if (v != goalVals[(j)] ) {
+			     	// $(row).addClass('hide')
+			    
+	     		}
+	     
+	   	}  
+	}
 });
 
 
