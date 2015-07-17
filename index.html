@@ -1,12 +1,18 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>Domestique</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/mapbox-directions.js/v0.3.0/mapbox.directions.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/mapbox-directions.js/v0.3.0/mapbox.directions.css' rel='stylesheet' type='text/css' />
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/slate/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
   </head>
   <body>
   <!-- Main container -->
@@ -186,12 +192,12 @@
               <label for="select" class="col-lg-2 control-label">Ride Style</label>
               <div class="col-lg-10">
                 <select class="form-control" id="rideStyle">
-                  <option>Road Edurance</option>
-                  <option>Road Speed</option>
-                  <option>Road Leisure</option>
-                  <option>Off-road Endurance</option>
-                  <option>Off-road Speed</option>
-                  <option>Off-road Leisure</option>
+                  <option data-id="RE">Road Edurance</option>
+                  <option data-id="RS">Road Speed</option>
+                  <option data-id="RL">Road Leisure</option>
+                  <option data-id="ORE">Off-road Endurance</option>
+                  <option data-id="ORS">Off-road Speed</option>
+                  <option data-id="ORL">Off-road Leisure</option>
                 </select>
               </div>
             </div>
@@ -199,13 +205,13 @@
               <label for="select" class="col-lg-2 control-label">Ride Speed</label>
               <div class="col-lg-10">
                 <select class="form-control" id="rideSpeed">
-                  <option>0-5mph</option>
-                  <option>6-10mph</option>
-                  <option>11-15mph</option>
-                  <option>16-20mph</option>
-                  <option>21-25mph</option>
-                  <option>26-30mph</option>
-                  <option>31mph+</option>
+                  <option data-id="05">0-5mph</option>
+                  <option data-id="10">6-10mph</option>
+                  <option data-id="15">11-15mph</option>
+                  <option data-id="20">16-20mph</option>
+                  <option data-id="25">21-25mph</option>
+                  <option data-id="30">26-30mph</option>
+                  <option data-id="31">31mph+</option>
                 </select>
               </div>
             </div>
@@ -213,12 +219,12 @@
               <label for="select" class="col-lg-2 control-label">Ride Time</label>
               <div class="col-lg-10">
                 <select class="form-control" id="rideTime">
-                  <option>0-30mins</option>
-                  <option>31-45mins</option>
-                  <option>46-60mins</option>
-                  <option>61-90mins</option>
-                  <option>91-120mins</option>
-                  <option>120mins+</option>
+                  <option data-id="30m">0-30mins</option>
+                  <option data-id="45m">31-45mins</option>
+                  <option data-id="60m">46-60mins</option>
+                  <option data-id="90m">61-90mins</option>
+                  <option data-id="120m">91-120mins</option>
+                  <option data-id="121m">120mins+</option>
                 </select>
               </div>
             </div>
@@ -226,14 +232,14 @@
               <label for="select" class="col-lg-2 control-label">Ride Distance</label>
               <div class="col-lg-10">
                 <select class="form-control" id="rideDistance">
-                  <option>0-5mi</option>
-                  <option>6-15mi</option>
-                  <option>16-25mi</option>
-                  <option>26-35mi</option>
-                  <option>36-50mi</option>
-                  <option>51-75mi</option>
-                  <option>76-100mi</option>
-                  <option>100mi+</option>
+                  <option data-id="5mi">0-5mi</option>
+                  <option data-id="15mi">6-15mi</option>
+                  <option data-id="25mi">16-25mi</option>
+                  <option data-id="35mi">26-35mi</option>
+                  <option data-id="50mi">36-50mi</option>
+                  <option data-id="75mi">51-75mi</option>
+                  <option data-id="100mi">76-100mi</option>
+                  <option data-id="101mi">100mi+</option>
                 </select>
               </div>
             </div>
@@ -241,14 +247,14 @@
               <label for="select" class="col-lg-2 control-label">Elevation Gain</label>
               <div class="col-lg-10">
                 <select class="form-control" id="rideElevation">
-                  <option>0-250ft</option>
-                  <option>251-500ft</option>
-                  <option>501-1000ft</option>
-                  <option>1001-1500ft</option>
-                  <option>1501-2500ft</option>
-                  <option>2501-3500ft</option>
-                  <option>3501-4500ft</option>
-                  <option>4500+</option>
+                  <option data-id="250ft">0-250ft</option>
+                  <option data-id="500ft">251-500ft</option>
+                  <option data-id="1000ft">501-1000ft</option>
+                  <option data-id="1500ft">1001-1500ft</option>
+                  <option data-id="2500ft">1501-2500ft</option>
+                  <option data-id="3500ft">2501-3500ft</option>
+                  <option data-id="4500ft">3501-4500ft</option>
+                  <option data-id="4501ft">4500+</option>
                 </select>
               </div>
             </div>
@@ -263,33 +269,81 @@
 
 <!-- Ride Table -->
 
-        <table class="table table-striped table-hover ride-list hide">
+        <table class="table table-striped table-hover hide" id="ride-list">
           <thead>
             <tr>
-              <th>Style</th>
               <th>Name</th>
+              <th>Style</th>
               <th>Time</th>
               <th>Distance</th>
               <th>Speed</th>
               <th>Elevation</th>
+              <th>Description</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="info">
-              <td>Road Endurance</td>
-              <td><a href="#" class="name">Rain, Mud, sand, and good times</a></td>
-              <td>1:37:51</td>
-              <td>20.3 mi</td>
-              <td>12.5 mi/h</td>
-              <td>1,145 ft</td>
+            <tr class="success">
+              <td class="nme"><a href="#" class="name"data-id="00">Rain, Mud, sand, and good times</a></td>
+              <td class="style"data-id="RS">Road Speed</td>
+              <td class="time"data-id="90m">1:27:51</td>
+              <td class="dist"data-id="25mi">20.3 mi</td>
+              <td class="spd"data-id="15">12.5 mi/h</td>
+              <td class="el"data-id="1500ft">1,145 ft</td>
+              <td class="desc"data-id="zz">This ride is a great challenge of effort. Some undulation pushing you for more speed, more effort, and testing your pain threshold!</td>
             </tr>
-            <tr>
-              <td>Road Endurance</td>
-              <td><a href="#" class="name">Lyons and back</a></td>
-              <td>2:08:26</td>
-              <td>27.3 mi</td>
-              <td>12.8 mi/h</td>
-              <td>2,120 ft</td>
+            <tr class="info nr">
+              <td class="nme"><a href="#" class="name"data-id="00">Lyons and back</a></td>
+              <td class="style"data-id="RE">Road Endurance</td>
+              <td class="time"data-id="120m">2:08:26</td>
+              <td class="dist"data-id="35mi">27.3 mi</td>
+              <td class="spd"data-id="20">16.8 mi/h</td>
+              <td class="el"data-id="2500ft">2,120 ft</td>
+              <td class="desc"data-id="zz">Great cruise along the front range on hwy 36. Veer off on the way back to hit a nice little climb with a really steep pitch at the end.</td>
+            </tr>
+             <tr class="danger nr">
+              <td class="nme"><a href="#" class="name"data-id="00">Got Breath</a></td>
+              <td class="style"data-id="ORS">Off-road Speed</td>
+              <td class="time"data-id="60m">53:01</td>
+              <td class="dist"data-id="5mi">5.0 mi</td>
+              <td class="spd"data-id="10">5.8 mi/h</td>
+              <td class="el"data-id="1000ft">634 ft</td>
+              <td class="desc"data-id="zz">Get ready to climb as soon as you leave the parking lot. Power up the mountain to some beautiful views. Trail is full of decent-size rocks that challenge your concentration and bike handling.</td>
+            </tr>
+            <tr class="warning nr">
+              <td class="nme"><a href="#" class="name"data-id="00">Marshall Mesa mtb</a></td>
+              <td class="style"data-id="ORE">Off-road Endurance</td>
+              <td class="time"data-id="90m">1:13:36</td>
+              <td class="dist"data-id="10mi">9.4 mi</td>
+              <td class="spd"data-id="10">7.7 mi/h</td>
+              <td class="el"data-id="250ft">250 ft</td>
+              <td class="desc"data-id="zz">Get ready to climb as soon as you leave the parking lot. Power up the mountain to some beautiful views. Trail is full of decent-size rocks that challenge your concentration and bike handling.</td>
+            </tr>
+            <tr class="nr">
+              <td class="nme"><a href="#" class="name"data-id="00">Evening Ride hipster style</a></td>
+              <td class="style"data-id="RL">Road Liesure</td>
+              <td class="time"data-id="30m">24:53</td>
+              <td class="dist"data-id="10mi">5.9 mi</td>
+              <td class="spd"data-id="15">12.6 mi/h</td>
+              <td class="el"data-id="250ft">161 ft</td>
+              <td class="desc"data-id="zz">Get ready to climb as soon as you leave the parking lot. Power up the mountain to some beautiful views. Trail is full of decent-size rocks that challenge your concentration and bike handling.</td>
+            </tr>
+            <tr class="nr">
+              <td class="nme"><a href="#" class="name"data-id="00">Forrest Meadows</a></td>
+              <td class="style"data-id="ORL">Off-road Liesure</td>
+              <td class="time"data-id="60min">53:07</td>
+              <td class="dist"data-id="5mi">4.2 mi</td>
+              <td class="spd"data-id="5">4.8 mi/h</td>
+              <td class="el"data-id="250ft">95 ft</td>
+              <td class="desc"data-id="zz">Get ready to climb as soon as you leave the parking lot. Power up the mountain to some beautiful views. Trail is full of decent-size rocks that challenge your concentration and bike handling.</td>
+            </tr>
+            <tr class="success nr">
+              <td class="nme"><a href="#" class="name"data-id="00">Shamrock TT</a></td>
+              <td class="style"data-id="RS">Road Speed</td>
+              <td class="time"data-id="45m">42:19</td>
+              <td class="dist"data-id="15mi">11.9 mi</td>
+              <td class="spd"data-id="25">18.6 mi/h</td>
+              <td class="el"data-id="500ft">303 ft</td>
+              <td class="desc"data-id="zz">Get ready to climb as soon as you leave the parking lot. Power up the mountain to some beautiful views. Trail is full of decent-size rocks that challenge your concentration and bike handling.</td>
             </tr>
       
           </tbody>
@@ -300,13 +354,15 @@
               
           <div class="box rideDetail hide">
             <div class="box-row1">
-              <h3 class="inline-block rideName">"Ride Name"</h3>
+              <div class="box-info float-left">
+                <h3 class="inline-block rideName" id="ride-nme">"Ride Name"</h3>
+              </div>
                 <div class="stats-box">
-                  <div class="panel panel-success inline-block data">
+                  <div class="panel panel-success inline-block data data-style">
                     <div class="panel-heading">
                       <h3 class="panel-title">Style</h3>
                     </div>
-                    <div class="panel-body">
+                    <div class="panel-body" id="ride-style">
                       "rideStyle"
                     </div>
                   </div>
@@ -314,7 +370,7 @@
                     <div class="panel-heading">
                       <h3 class="panel-title">Time</h3>
                     </div>
-                    <div class="panel-body">
+                    <div class="panel-body" id="ride-time">
                       "rideTime"
                     </div>
                   </div>
@@ -322,7 +378,7 @@
                     <div class="panel-heading">
                       <h3 class="panel-title">Distance</h3>
                     </div>
-                    <div class="panel-body">
+                    <div class="panel-body" id="ride-dist">
                       "rideDistance"
                     </div>
                   </div>
@@ -330,25 +386,32 @@
                     <div class="panel-heading">
                       <h3 class="panel-title">Speed</h3>
                     </div>
-                    <div class="panel-body">
+                    <div class="panel-body" id="ride-spd">
                       "rideSpeed"
+                    </div>
+                  </div>
+                  <div class="panel panel-success inline-block data">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Elevation</h3>
+                    </div>
+                    <div class="panel-body" id="ride-el">
+                      "gain"
                     </div>
                   </div>
                 </div>
               </div>
             <div class="box-row2">
-              <div class="panel panel-info description-panel float-left">
+              <div class="panel panel-info box-info float-left">
                 <div class="panel-heading">
                   <h3 class="panel-title">Description</h3>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body" id="ride-desc">
                   "ride description"
                 </div>
               </div>
-              <!-- <div class="inline-block float-left">
-                <p>"ride description"</p>
-              </div> -->
-              <div id="map-canvas" class="inline-block"></div>
+              <div id="map-canvas" class="inline-block">
+                <iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/340692547/embed/8f41d00459c7fb2c77f58a0cc76d3336f4127931'></iframe>
+              </div>
             </div>
             <div class="box-row3">
               <div class="close-button">
