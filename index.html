@@ -33,37 +33,15 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
+            <li class="active nav-rides"><a href="#">Rides <span class="sr-only">(current)</span></a></li>
           </ul>
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Options <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
+                <li><a href="#" class="choose-ride">Choose Ride</a></li>
+                <li><a href="#" class="log-ride">Log Ride</a></li>
+                <li><a href="#" class="nav-rides">View Ride List</a></li>
               </ul>
             </li>
           </ul>
@@ -283,7 +261,7 @@
           </thead>
           <tbody>
             <tr class="success">
-              <td class="nme"><a href="#" class="name"data-id="00">Rain, Mud, sand, and good times</a></td>
+              <td class="nme"><a href="#" class="name rain"data-id="00">Rain, Mud, sand, and good times</a></td>
               <td class="style"data-id="RS">Road Speed</td>
               <td class="time"data-id="90m">1:27:51</td>
               <td class="dist"data-id="25mi">20.3 mi</td>
@@ -292,7 +270,7 @@
               <td class="desc"data-id="zz">This ride is a great challenge of effort. Some undulation pushing you for more speed, more effort, and testing your pain threshold!</td>
             </tr>
             <tr class="info nr">
-              <td class="nme"><a href="#" class="name"data-id="00">Lyons and back</a></td>
+              <td class="nme"><a href="#" class="name lyons"data-id="00">Lyons and back</a></td>
               <td class="style"data-id="RE">Road Endurance</td>
               <td class="time"data-id="120m">2:08:26</td>
               <td class="dist"data-id="35mi">27.3 mi</td>
@@ -301,7 +279,7 @@
               <td class="desc"data-id="zz">Great cruise along the front range on hwy 36. Veer off on the way back to hit a nice little climb with a really steep pitch at the end.</td>
             </tr>
              <tr class="danger nr">
-              <td class="nme"><a href="#" class="name"data-id="00">Got Breath</a></td>
+              <td class="nme"><a href="#" class="name breath"data-id="00">Got Breath</a></td>
               <td class="style"data-id="ORS">Off-road Speed</td>
               <td class="time"data-id="60m">53:01</td>
               <td class="dist"data-id="5mi">5.0 mi</td>
@@ -310,40 +288,40 @@
               <td class="desc"data-id="zz">Get ready to climb as soon as you leave the parking lot. Power up the mountain to some beautiful views. Trail is full of decent-size rocks that challenge your concentration and bike handling.</td>
             </tr>
             <tr class="warning nr">
-              <td class="nme"><a href="#" class="name"data-id="00">Marshall Mesa mtb</a></td>
+              <td class="nme"><a href="#" class="name marshall"data-id="00">Marshall Mesa mtb</a></td>
               <td class="style"data-id="ORE">Off-road Endurance</td>
               <td class="time"data-id="90m">1:13:36</td>
               <td class="dist"data-id="10mi">9.4 mi</td>
               <td class="spd"data-id="10">7.7 mi/h</td>
               <td class="el"data-id="250ft">250 ft</td>
-              <td class="desc"data-id="zz">Get ready to climb as soon as you leave the parking lot. Power up the mountain to some beautiful views. Trail is full of decent-size rocks that challenge your concentration and bike handling.</td>
+              <td class="desc"data-id="zz">Beautiful ride through the front range praries. Georgeous views of the flatirons and the city. Watch out for hikers and dogs on the trail!</td>
             </tr>
             <tr class="nr">
-              <td class="nme"><a href="#" class="name"data-id="00">Evening Ride hipster style</a></td>
+              <td class="nme"><a href="#" class="name hipster"data-id="00">Evening Ride hipster style</a></td>
               <td class="style"data-id="RL">Road Liesure</td>
               <td class="time"data-id="30m">24:53</td>
               <td class="dist"data-id="10mi">5.9 mi</td>
               <td class="spd"data-id="15">12.6 mi/h</td>
               <td class="el"data-id="250ft">161 ft</td>
-              <td class="desc"data-id="zz">Get ready to climb as soon as you leave the parking lot. Power up the mountain to some beautiful views. Trail is full of decent-size rocks that challenge your concentration and bike handling.</td>
+              <td class="desc"data-id="zz">Leave the jersey and spandex at home. Just roll up your pant legs and wear that wornout flannel for this one. Easy laid back cruise around the hood. Sit up, relax, and enjoy the wind in your face. </td>
             </tr>
             <tr class="nr">
-              <td class="nme"><a href="#" class="name"data-id="00">Forrest Meadows</a></td>
+              <td class="nme"><a href="#" class="name forrest"data-id="00">Forrest Meadows</a></td>
               <td class="style"data-id="ORL">Off-road Liesure</td>
               <td class="time"data-id="60min">53:07</td>
               <td class="dist"data-id="5mi">4.2 mi</td>
               <td class="spd"data-id="5">4.8 mi/h</td>
               <td class="el"data-id="250ft">95 ft</td>
-              <td class="desc"data-id="zz">Get ready to climb as soon as you leave the parking lot. Power up the mountain to some beautiful views. Trail is full of decent-size rocks that challenge your concentration and bike handling.</td>
+              <td class="desc"data-id="zz">Great single track ride. The trail has a little bit of everything from rocks, roots, sand and mud. Not much flat on this roller course so go slow if you aren't in interval shape.</td>
             </tr>
             <tr class="success nr">
-              <td class="nme"><a href="#" class="name"data-id="00">Shamrock TT</a></td>
+              <td class="nme"><a href="#" class="name shamrock"data-id="00">Shamrock TT</a></td>
               <td class="style"data-id="RS">Road Speed</td>
               <td class="time"data-id="45m">42:19</td>
               <td class="dist"data-id="15mi">11.9 mi</td>
               <td class="spd"data-id="25">18.6 mi/h</td>
               <td class="el"data-id="500ft">303 ft</td>
-              <td class="desc"data-id="zz">Get ready to climb as soon as you leave the parking lot. Power up the mountain to some beautiful views. Trail is full of decent-size rocks that challenge your concentration and bike handling.</td>
+              <td class="desc"data-id="zz">Ride the aero bike if you got one. This is challenging race track built for speed. Don't get too comfortable or the little kickers will catch you off guard. Just enough rollers to keep the legs burning. Shift in the big ring and go full-gas!</td>
             </tr>
       
           </tbody>
@@ -409,9 +387,7 @@
                   "ride description"
                 </div>
               </div>
-              <div id="map-canvas" class="inline-block">
-                <iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/340692547/embed/8f41d00459c7fb2c77f58a0cc76d3336f4127931'></iframe>
-              </div>
+              <div id="map-canvas" class="inline-block"></div>
             </div>
             <div class="box-row3">
               <div class="close-button">

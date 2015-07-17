@@ -21,36 +21,38 @@ $( ".goal-submit" ).on(function( event ) {
   event.preventDefault();
 });
 
-var rideList = [
-	{
-		style 	: 'Road Speed',
-		name    : 'Rain, Mud, Sand, and Good Times',
-		time 	: '1:37:51',
-		distance : '20.3 mi',
-		speed 	: '12.5 mi/h',
-		gain 	: '1,145',
-		description : 'This ride is a great challenge of effort. Some undulation pushing you for more speed, more effort, and testing your pain threshold!',
-	},
-	{
-		style 	: 'Road Endurance',
-		name    : 'Lyons and back',
-		time 	: '2:08:26',
-		distance : '27.3 mi',
-		speed 	: '12.8 mi/h',
-		gain 	: '2,120 ft',
-		description : 'Great cruise along the front range on hwy 36. Veer off on the way back to hit a nice little climb with a really steep pitch at the end.',
-	},
-	{
-		style 	: 'Off-road Speed',
-		name    : 'Got Breath',
-		time 	: '53:01',
-		distance : '5.1 mi',
-		speed 	: '5.8 mi/h',
-		gain 	: '634 ft',
-		description : 'Get ready to climb as soon as you leave the parking lot. Power up the mountain to some beautiful views. Trail is full of decent-size rocks that challenge your concentration and bike handling.',
-	},
+// -------------- Started to build objects, decided to fake it ---------------
 
-];
+// var rideList = [
+// 	{
+// 		style 	: 'Road Speed',
+// 		name    : 'Rain, Mud, Sand, and Good Times',
+// 		time 	: '1:37:51',
+// 		distance : '20.3 mi',
+// 		speed 	: '12.5 mi/h',
+// 		gain 	: '1,145',
+// 		description : 'This ride is a great challenge of effort. Some undulation pushing you for more speed, more effort, and testing your pain threshold!',
+// 	},
+// 	{
+// 		style 	: 'Road Endurance',
+// 		name    : 'Lyons and back',
+// 		time 	: '2:08:26',
+// 		distance : '27.3 mi',
+// 		speed 	: '12.8 mi/h',
+// 		gain 	: '2,120 ft',
+// 		description : 'Great cruise along the front range on hwy 36. Veer off on the way back to hit a nice little climb with a really steep pitch at the end.',
+// 	},
+// 	{
+// 		style 	: 'Off-road Speed',
+// 		name    : 'Got Breath',
+// 		time 	: '53:01',
+// 		distance : '5.1 mi',
+// 		speed 	: '5.8 mi/h',
+// 		gain 	: '634 ft',
+// 		description : 'Get ready to climb as soon as you leave the parking lot. Power up the mountain to some beautiful views. Trail is full of decent-size rocks that challenge your concentration and bike handling.',
+// 	},
+
+// ];
 
 
 // this creates the goal object used when choosing a ride
@@ -65,6 +67,30 @@ var RideGoal = function(style, speed, time, distance, gain){
 
 
 
+// -------  nav bar links  --------------------
+
+// Click on Domestique in header to reset show the choice-box and hide everything else
+
+$('.navbar-brand').on('click', function(){
+	$('.choice-box').removeClass('hide').addClass('show')
+	$('.new-ride').removeClass('show').addClass('hide')
+	$('.new-goal').removeClass('show').addClass('hide')
+	$('#ride-list').removeClass('show').addClass('hide')
+	$('.rideDetail').removeClass('show').addClass('hide')
+});
+
+$('.nav-rides').on('click', function(){
+	$('.choice-box').removeClass('show').addClass('hide')
+	$('.new-ride').removeClass('show').addClass('hide')
+	$('.new-goal').removeClass('show').addClass('hide')
+	$('.rideDetail').removeClass('show').addClass('hide')
+	$('#ride-list').removeClass('hide').addClass('show')
+});
+
+
+
+
+
 $('.btn-primary').on('click', function(event){
 	event.preventDefault()
 });
@@ -72,15 +98,16 @@ $('.btn-primary').on('click', function(event){
 // hide main choice box and show set goal form
 
 $('.choose-ride').on('click', function(){
-	console.log("clicked");
 	$('.choice-box').removeClass('show').addClass('hide')
+	$('.new-ride').removeClass('show').addClass('hide')
+	$('.rideDetail').removeClass('show').addClass('hide')
+	$('#ride-list').removeClass('show').addClass('hide')
 	$('.new-goal').removeClass('hide')
 
 });
 
 // submit goals, hide the form and show the matching list of rides
 $('.goal-submit').on('click', function(){
-	console.log("goal submitted");
 	$('.new-goal').removeClass('show').addClass('hide');
 	$('#ride-list').addClass('show');	
 
@@ -127,29 +154,10 @@ $('.goal-submit').on('click', function(){
 });
 
 
-// use newGoal object to only show the matching rides from the rideList
-
-// $(".name").click(function() {
-//     var $item = $(this).closest("tr")   // Finds the closest row <tr> 
-//                        .find(".style")     // Gets a descendent with class="nr"
-//                        .text();         // Retrieves the text within <td>
-
-//     $("#ride-style").text($item);       // Outputs the answer
-// });
-
-
-
-
-
-
-
-
-
 
 
 // if cancel is clicked on new goal
 $('.goal-cancel').on('click', function(){
-	console.log("nevermind");
 	$('.choice-box').removeClass('hide').addClass('show')
 	$('.new-goal').removeClass('show').addClass('hide')
 });
@@ -157,14 +165,15 @@ $('.goal-cancel').on('click', function(){
 // hide main choice box and show set goal form on submit
 
 $('.log-ride').on('click', function(){
-	console.log("clicked");
 	$('.choice-box').removeClass('show').addClass('hide')
+	$('.new-goal').removeClass('show').addClass('hide')
+	$('.rideDetail').removeClass('show').addClass('hide')
+	$('#ride-list').removeClass('show').addClass('hide')
 	$('.new-ride').removeClass('hide')
 });
 
 // submit the new ride log and return to main choice box
 $('.log-submit').on('click', function(){
-	console.log("log submitted");
 	$('.new-ride').addClass('hide')
 	$('.choice-box').removeClass('hide').addClass('show')
 
@@ -173,22 +182,11 @@ $('.log-submit').on('click', function(){
 // if cancel is clicked on new-ride
 
 $('.log-cancel').on('click', function(){
-	console.log("clicked");
 	$('.choice-box').removeClass('hide').addClass('show')
 	$('.new-ride').removeClass('show').addClass('hide')
 });
 
-// Click on Domestique in header to reset show the choice-box and hide everything else
 
-$('.navbar-brand').on('click', function(){
-	console.log("clicked");
-	$('.choice-box').removeClass('hide').addClass('show')
-	$('.new-ride').removeClass('show').addClass('hide')
-	$('.new-goal').removeClass('show').addClass('hide')
-	$('#ride-list').removeClass('show').addClass('hide')
-	$('.rideDetail').removeClass('show').addClass('hide')
-
-});
 
 // ----- Show Ride Detail ----------------
 
@@ -219,6 +217,54 @@ $('.name').on('click', function(){
 $('.close-button').on('click', function(){
 	$('.rideDetail').removeClass('show').addClass('hide')
 });
+
+
+// ---- This event handlers append the map to the corresponding ride ---------
+
+
+
+$('.rain').on('click', function(){
+	$('iframe').remove()
+	$('#map-canvas').prepend("<iframe height='100%' width='100%' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/340692547/embed/8f41d00459c7fb2c77f58a0cc76d3336f4127931'></iframe>")
+});
+
+$('.lyons').on('click', function(){
+	$('iframe').remove()
+	$('#map-canvas').prepend("<iframe height='100%' width='100%' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/339121473/embed/a78e0a2919b55136b04e84c95450555e6e9e3c33'></iframe>")
+});
+
+$('.breath').on('click', function(){
+	$('iframe').remove()
+	$('#map-canvas').prepend("<iframe height='100%' width='100%' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/338553942/embed/13aa5e48a5484ded0448d84db6d7ac1a8a125e8b'></iframe>")
+});
+
+$('.marshall').on('click', function(){
+	$('iframe').remove()
+	$('#map-canvas').prepend("<iframe height='100%' width='100%' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/330252085/embed/8a87fac9b9db8a558d79a5fa2ae1da82de8a4cee'></iframe>")
+});
+
+$('.hipster').on('click', function(){
+	$('iframe').remove()
+	$('#map-canvas').prepend("<iframe height='100%' width='100%' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/205406823/embed/f07015b075960b5f4e64d77974d745086aeae726'></iframe>")
+});
+
+$('.forrest').on('click', function(){
+	$('iframe').remove()
+	$('#map-canvas').prepend("<iframe height='100%' width='100%' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/226782722/embed/76cfe7c90e8614325971f84616ed31bc5c33c9d6'></iframe>")
+});
+
+$('.shamrock').on('click', function(){
+	$('iframe').remove()
+	$('#map-canvas').prepend("<iframe height='100%' width='100%' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/100141781/embed/ec1115db98c95f73bbdbfb8cc45efb4076fc3f65'></iframe>")
+});
+
+
+
+
+
+
+
+
 
 
 // ------------  Leaflet Maps ------------------
