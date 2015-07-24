@@ -3,7 +3,7 @@ $(document).on('ready', function() {
 
 
 
-// this creates the ride object for each ride logged.
+// this creates the ride object for each ride logged. Couldn't get it to store the selections.
 
 var Ride = function(name, style, speed, time, distance, gain, description){
 	this.name 			= name;
@@ -21,38 +21,6 @@ $( ".goal-submit" ).on(function( event ) {
   event.preventDefault();
 });
 
-// -------------- Started to build objects, decided to fake it ---------------
-
-// var rideList = [
-// 	{
-// 		style 	: 'Road Speed',
-// 		name    : 'Rain, Mud, Sand, and Good Times',
-// 		time 	: '1:37:51',
-// 		distance : '20.3 mi',
-// 		speed 	: '12.5 mi/h',
-// 		gain 	: '1,145',
-// 		description : 'This ride is a great challenge of effort. Some undulation pushing you for more speed, more effort, and testing your pain threshold!',
-// 	},
-// 	{
-// 		style 	: 'Road Endurance',
-// 		name    : 'Lyons and back',
-// 		time 	: '2:08:26',
-// 		distance : '27.3 mi',
-// 		speed 	: '12.8 mi/h',
-// 		gain 	: '2,120 ft',
-// 		description : 'Great cruise along the front range on hwy 36. Veer off on the way back to hit a nice little climb with a really steep pitch at the end.',
-// 	},
-// 	{
-// 		style 	: 'Off-road Speed',
-// 		name    : 'Got Breath',
-// 		time 	: '53:01',
-// 		distance : '5.1 mi',
-// 		speed 	: '5.8 mi/h',
-// 		gain 	: '634 ft',
-// 		description : 'Get ready to climb as soon as you leave the parking lot. Power up the mountain to some beautiful views. Trail is full of decent-size rocks that challenge your concentration and bike handling.',
-// 	},
-
-// ];
 
 
 // this creates the goal object used when choosing a ride
@@ -106,53 +74,55 @@ $('.choose-ride').on('click', function(){
 
 });
 
-// submit goals, hide the form and show the matching list of rides
+// submit goals, hide the form and show the matching list of rides, Didn't get working.
+
+
 $('.goal-submit').on('click', function(){
 	$('.new-goal').removeClass('show').addClass('hide');
 	$('#ride-list').addClass('show');	
 
 
-	var rideStyle = $('#rideStyle').val();
-	var rideTime = $('#rideTime').val();
-	var rideDistance = $('#rideDistance').val();
-	var rideSpeed = $('#rideSpeed').val();
-	var rideElevation = $('#rideElevation').val();
-	console.log( rideStyle )
+	// var rideStyle = $('#rideStyle').val();
+	// var rideTime = $('#rideTime').val();
+	// var rideDistance = $('#rideDistance').val();
+	// var rideSpeed = $('#rideSpeed').val();
+	// var rideElevation = $('#rideElevation').val();
+	// console.log( rideStyle )
 
-	// var newGoal = new RideGoal(rideStyle, rideTime, rideDistance, rideSpeed, rideElevation);
-	// rideList.push(newGoal)
+	// // var newGoal = new RideGoal(rideStyle, rideTime, rideDistance, rideSpeed, rideElevation);
+	// // rideList.push(newGoal)
 
-	var goalVals =[rideStyle, rideTime, rideDistance, rideSpeed, rideElevation, 'zz'];
+	// var goalVals =[rideStyle, rideTime, rideDistance, rideSpeed, rideElevation, 'zz'];
 	
-	var table = document.getElementById("ride-list");
+	// var table = document.getElementById("ride-list");
 
-	// for (var i = 1, row; row = table.rows[i]; i++) {
-	//    //iterate through rows
-	//    //rows would be accessed using the "row" variable assigned in the for loop
-	//    for (var j = 0, col; col = row.cells[j]; j++) {
-	//      //iterate through columns
-	//      //columns would be accessed using the "col" variable assigned in the for loop
+	// // for (var i = 1, row; row = table.rows[i]; i++) {
+	// //    //iterate through rows
+	// //    //rows would be accessed using the "row" variable assigned in the for loop
+	// //    for (var j = 0, col; col = row.cells[j]; j++) {
+	// //      //iterate through columns
+	// //      //columns would be accessed using the "col" variable assigned in the for loop
 	     
 	     
-		   for (var i = 1, row; row = table.rows[i]; i++) {
-		   //iterate through rows
-		   //rows would be accessed using the "row" variable assigned in the for loop
+	// 	   for (var i = 1, row; row = table.rows[i]; i++) {
+	// 	   //iterate through rows
+	// 	   //rows would be accessed using the "row" variable assigned in the for loop
 		   
 
-			   for (var j = 1, col; col = row.cells[j] ; j++) {
-			     //iterate through columns
-			     //columns would be accessed using the "col" variable assigned in the for loop
-			     var v = $(col).data('id');
-			     var gV = goalVals[(j - 1)]
-			     	console.log(gV)
-			     	console.log(v)
-			     if (v != goalVals[(j)] ) {
-			     	// $(row).addClass('hide')
+	// 		   for (var j = 1, col; col = row.cells[j] ; j++) {
+	// 		     //iterate through columns
+	// 		     //columns would be accessed using the "col" variable assigned in the for loop
+	// 		     var v = $(col).data('id');
+	// 		     var gV = goalVals[(j - 1)]
+	// 		     	console.log(gV)
+	// 		     	console.log(v)
+	// 		     if (v != goalVals[(j)] ) {
+	// 		     	// $(row).addClass('hide')
 			    
-	     		}
+	//      		}
 	     
-	   	}  
-	}
+	//    	}  
+	// }
 });
 
 
@@ -221,7 +191,7 @@ $('.close-button').on('click', function(){
 });
 
 
-// ---- This event handlers append the map to the corresponding ride ---------
+// ---- These event handlers append the map to the corresponding ride ---------
 
 
 
@@ -267,8 +237,6 @@ $('.shamrock').on('click', function(){
 
 
 
-
-
 // ------------  Leaflet Maps ------------------
 
 // var map = L.map('map-canvas').setView([40.0274, -105.2519], 13);
@@ -284,6 +252,38 @@ $('.shamrock').on('click', function(){
 // --------------------------------------------------------------------------
 
 
+// -------------- Started to build objects, decided to fake it ---------------
+
+// var rideList = [
+// 	{
+// 		style 	: 'Road Speed',
+// 		name    : 'Rain, Mud, Sand, and Good Times',
+// 		time 	: '1:37:51',
+// 		distance : '20.3 mi',
+// 		speed 	: '12.5 mi/h',
+// 		gain 	: '1,145',
+// 		description : 'This ride is a great challenge of effort. Some undulation pushing you for more speed, more effort, and testing your pain threshold!',
+// 	},
+// 	{
+// 		style 	: 'Road Endurance',
+// 		name    : 'Lyons and back',
+// 		time 	: '2:08:26',
+// 		distance : '27.3 mi',
+// 		speed 	: '12.8 mi/h',
+// 		gain 	: '2,120 ft',
+// 		description : 'Great cruise along the front range on hwy 36. Veer off on the way back to hit a nice little climb with a really steep pitch at the end.',
+// 	},
+// 	{
+// 		style 	: 'Off-road Speed',
+// 		name    : 'Got Breath',
+// 		time 	: '53:01',
+// 		distance : '5.1 mi',
+// 		speed 	: '5.8 mi/h',
+// 		gain 	: '634 ft',
+// 		description : 'Get ready to climb as soon as you leave the parking lot. Power up the mountain to some beautiful views. Trail is full of decent-size rocks that challenge your concentration and bike handling.',
+// 	},
+
+// ];
 
 
 
